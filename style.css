@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(173, 250, 173), rgb(119, 242, 119));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 85%;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ctop {
+    padding: 0% 20%;
+    height: 80px;
+    width: 100%;
+    background-color: #23cc72;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #23cc72;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.cbot {
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.bubble {
+    height: 50px;
+    width: 50px;
+    background-color: #23cc72;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 10px #030a0670,
+        inset 0px 0px 20px #030a0670;
+    transition: 0.3s;
+}
+
+.bubble:hover {
+    transform: scale(1.1);
+    background-color: orangered;
+}
